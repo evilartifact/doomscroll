@@ -83,6 +83,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
     override init() {
         super.init()
+        loadPersistedData()
         setupBindings()
         checkAuthorizationStatus()
         setupUserDefaultsObserver()
@@ -104,6 +105,9 @@ class ScreenTimeManager: NSObject, ObservableObject {
     // MARK: - Selection Handling
     private func handleSelectionChange(_ selection: FamilyActivitySelection) {
         print("📱 Updated app selection: \(selection.applicationTokens.count) apps, \(selection.categoryTokens.count) categories")
+        
+        // Save the selection to persistence
+        saveSelection(selection)
         
         // When categories are selected, ensure we're monitoring ALL apps in those categories
         if !selection.categoryTokens.isEmpty {
@@ -159,6 +163,8 @@ class ScreenTimeManager: NSObject, ObservableObject {
                 print("📱 Authorization status after request: \(newStatus)")
                 
                 if newStatus == .approved {
+                    self.authorizationStatus = .approved
+                    UserDefaults.standard.set(self.authorizationStatus.rawValue, forKey: "authorizationStatus")
                     print("✅ Screen Time authorization approved - starting monitoring")
                     self.startRealDeviceActivityMonitoring()
                 } else {
@@ -594,6 +600,87 @@ class ScreenTimeManager: NSObject, ObservableObject {
                 print("❌ Failed to load blocking state: \(error)")
             }
         }
+    }
+    
+    // MARK: - Selection Persistence
+    private func saveSelection(_ selection: FamilyActivitySelection) {
+        let encoder = JSONEncoder()
+        do {
+            // Save application tokens
+            let appTokensData = try encoder.encode(Array(selection.applicationTokens))
+            UserDefaults.standard.set(appTokensData, forKey: "selectedAppTokens")
+            
+            // Save category tokens
+            let categoryTokensData = try encoder.encode(Array(selection.categoryTokens))
+            UserDefaults.standard.set(categoryTokensData, forKey: "selectedCategoryTokens")
+            
+            // Save web domain tokens
+            let webDomainTokensData = try encoder.encode(Array(selection.webDomainTokens))
+            UserDefaults.standard.set(webDomainTokensData, forKey: "selectedWebDomainTokens")
+            
+            print("💾 Saved app selection: \(selection.applicationTokens.count) apps, \(selection.categoryTokens.count) categories")
+        } catch {
+            print("❌ Failed to save selection: \(error)")
+        }
+    }
+    
+    private func loadPersistedData() {
+        // Load authorization status
+        if UserDefaults.standard.object(forKey: "authorizationStatus") != nil {
+            let statusRawValue = UserDefaults.standard.integer(forKey: "authorizationStatus")
+            if let status = AuthorizationStatus(rawValue: statusRawValue) {
+                authorizationStatus = status
+            }
+        }
+        
+        // Load saved selection
+        let decoder = JSONDecoder()
+        var appTokens: Set<ApplicationToken> = []
+        var categoryTokens: Set<ActivityCategoryToken> = []
+        var webDomainTokens: Set<WebDomainToken> = []
+        
+        // Load application tokens
+        if let appTokensData = UserDefaults.standard.data(forKey: "selectedAppTokens") {
+            do {
+                let tokens = try decoder.decode([ApplicationToken].self, from: appTokensData)
+                appTokens = Set(tokens)
+            } catch {
+                print("❌ Failed to load app tokens: \(error)")
+            }
+        }
+        
+        // Load category tokens
+        if let categoryTokensData = UserDefaults.standard.data(forKey: "selectedCategoryTokens") {
+            do {
+                let tokens = try decoder.decode([ActivityCategoryToken].self, from: categoryTokensData)
+                categoryTokens = Set(tokens)
+            } catch {
+                print("❌ Failed to load category tokens: \(error)")
+            }
+        }
+        
+        // Load web domain tokens
+        if let webDomainTokensData = UserDefaults.standard.data(forKey: "selectedWebDomainTokens") {
+            do {
+                let tokens = try decoder.decode([WebDomainToken].self, from: webDomainTokensData)
+                webDomainTokens = Set(tokens)
+            } catch {
+                print("❌ Failed to load web domain tokens: \(error)")
+            }
+        }
+        
+        // Restore the selection if we have any tokens
+        if !appTokens.isEmpty || !categoryTokens.isEmpty || !webDomainTokens.isEmpty {
+            var selection = FamilyActivitySelection()
+            selection.applicationTokens = appTokens
+            selection.categoryTokens = categoryTokens
+            selection.webDomainTokens = webDomainTokens
+            screenTimeSelection = selection
+            print("📱 Restored app selection: \(appTokens.count) apps, \(categoryTokens.count) categories")
+        }
+        
+        // Load blocking state
+        loadBlockingState()
     }
     
     deinit {
