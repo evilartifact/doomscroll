@@ -1,0 +1,771 @@
+{
+  "chapters": [
+    {
+      "title": "Doomscrolling Exposed",
+      "description": "Why you can’t stop, why you feel worse, and who’s cashing in.",
+      "systemIcon": "phone.down.circle",
+      "image": "chapter1",
+      "readTime": 5,
+      "gemsReward": 15,
+      "chapter": 1,
+      "part": 1,
+      "color": "blue",
+      "content": "Admit it: you opened your phone “just for a minute” and now it’s been three hours, you’ve cycled through five crises, and your thumb is sore from all the flicking. Welcome to doomscrolling—the digital-age hobby that eats your time, your mood, and your attention span. \n\n    **What’s Doomscrolling, Anyway?**\n    It’s the mindless marathon of swiping through bad news, online drama, and whatever fresh hell social media serves up. Not because you want to feel bad, but because your brain is stuck on ‘auto-survive’ mode.\n\n    **Why Do You Keep Doing It?**\n    Evolution. Your ancestors watched the bushes for predators. You watch trending hashtags for disasters. Same wiring, different century. Your brain gets a dopamine hit for every new “threat”—even if it’s just a TikTok about some politician being dumb.\n\n    **The Business of Addiction**\n    Here’s the fun part: Tech giants literally pay neuroscientists to make their apps more addictive. Every notification, every “recommended for you,” every infinite scroll—they’re all engineered for one thing: keeping you glued to the screen and drooling ad revenue.\n\n    **So Who Wins?**\n    Spoiler: Not you. Every hour you doomscroll is money in someone else’s pocket. The only thing you’re gaining is existential dread and maybe carpal tunnel.\n\n    **The Invisible Price Tag**\n    While you’re busy doomscrolling, you’re not building friendships, not creating anything, not learning, not sleeping, not growing as a person. You’re living in other people’s drama instead of your own actual life.\n\n    **So…What Now?**\n    Nobody’s coming to rescue you from your phone. If you don’t set the boundaries, the algorithm will eat you alive (and then serve you a 20% off ad for therapy).\n\n    Time to wake up, grab your dignity, and actually start living. Or, you know, keep scrolling. Your call.",
+      "keyPoints": [
+        "Doomscrolling = compulsive, negative content binge",
+        "Brain’s survival wiring is hijacked by digital chaos",
+        "Tech companies design apps to maximize addiction",
+        "Doomscrolling steals time, energy, and real life",
+        "You’re not the customer—you’re the product",
+        "The only thing growing is someone else’s bank account"
+    ],
+      "actionItems": [
+        "Next time you scroll, pause and notice: Are you learning or just stressing?",
+        "Track how many minutes you spend on news and social apps today—brace yourself.",
+        "Ask: Who’s making money off my misery right now?",
+        "Set a timer for 20 minutes and try not to touch your phone. Harder than it sounds, huh?",
+        "Share a real moment (yes, with a human) instead of a meme.",
+        "Before bedtime, put the phone out of reach. Your sleep schedule will thank you."
+    ],
+      "flashcards": [
+        {
+          "front": "What is doomscrolling really?",
+          "back": "Endless scrolling through negative news or drama, usually feeling worse after.",
+          "emoji": "📱",
+          "type": "concept"
+        },
+        {
+          "front": "Why does your brain love doom?",
+          "back": "Evolution wired you to scan for threats; now you scan for digital drama.",
+          "emoji": "🧠",
+          "type": "science"
+        },
+        {
+          "front": "Who profits when you can’t stop scrolling?",
+          "back": "Tech companies, ad brokers, and anyone selling your attention to the highest bidder.",
+          "emoji": "💰",
+          "type": "harsh"
+        },
+        {
+          "front": "What happens to your mood after doomscrolling?",
+          "back": "Usually worse—hello, anxiety, FOMO, and feeling stuck.",
+          "emoji": "😵",
+          "type": "impact"
+        },
+        {
+          "front": "Are you the customer or the product?",
+          "back": "You’re the product. Your attention is what’s being sold.",
+          "emoji": "🧑‍💻",
+          "type": "truth"
+        },
+        {
+          "front": "What’s one thing you miss out on when doomscrolling?",
+          "back": "Real life—connections, skills, creativity, and sleep.",
+          "emoji": "⏳",
+          "type": "lifestyle"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What industry’s tricks do social media companies use to keep you hooked?",
+        "correctAnswer": "Slot machines and gambling psychology",
+        "wrongAnswer": "User satisfaction surveys",
+        "explanation": "They literally copy techniques from casinos and slot machines to keep you scrolling (and spending). Your misery = their business model."
+      }
+    },
+    {
+      "title": "Algorithms vs. Your Brain",
+      "description": "How Social Media Keeps You Hooked",
+      "systemIcon": "brain.head.profile",
+      "image": "chapter2",
+      "readTime": 7,
+      "gemsReward": 15,
+      "chapter": 2,
+      "part": 1,
+      "color": "blue",
+      "content": "Let’s kill the fantasy that social media is about “connecting with friends.” It’s about algorithms—a swarm of math-powered digital stalkers that study you harder than your ex ever did. Every swipe, like, cringe, rage-comment, or three-second linger on a thirst trap? That’s data. Your data. The algorithm feasts on it.\n\n    **Meet Your Overlord: The Algorithm**\n    It isn’t a single piece of code; it’s an evolving monster, tweaking itself in real time, learning what pushes your buttons. And its only goal? Maximum screen time. Because the more time you spend in the app, the more ads you see. More ads = more money for them. (Spoiler: you’re not seeing a dime.)\n\n    **Slot Machine Science: How They Get You**\n    Social media feeds are rigged with variable rewards. Translation: sometimes you see something juicy, sometimes you don’t. That unpredictability is the same tactic slot machines use to keep gamblers feeding coins into oblivion. But here, it’s your attention they’re after. That “pull-to-refresh” is your digital lever, and the dopamine hit keeps you chasing the next viral tweet, meltdown, or epic meme.\n\n    **The Dopamine Heist**\n    Here’s the ugly truth: your brain is running on 50,000-year-old wiring, designed to reward you for new, novel things. The algorithm knows this. Every notification ping, every endless scroll, every “For You” page—designed for maximum dopamine, minimum self-control. Your brain keeps coming back for more, even when you *know* it’s bad for you. Sound familiar?\n\n    **Data Minions, Assemble!**\n    Think you’re just scrolling mindlessly? Think again. Each of your moves is being tracked, logged, and fed into a giant machine-learning buffet. You are a lab rat, and every tap is another datapoint. They test which posts make you scroll past, which make you stop, which make you comment “bruh.” The algorithm adjusts. It learns. It gets better at owning your time.\n\n    **Who’s Really in Control?**\n    The answer isn’t you—unless you make it that way. The system wants you on autopilot. Your so-called “choices” are nudges, not decisions. If you’re not careful, you’ll look up from your phone in six months and realize you remember more TikToks than actual life events.\n\n    **Are You The Customer or The Product?**\n    Here’s the punchline: social media is free because *you* are what’s for sale. Your time, your attention, your emotions—all auctioned off to the highest bidder. The algorithm’s only job is to fatten you up with enough content to make you stay, so it can milk you for ad impressions.\n\n    **What Can You Actually Do?**\n    Take the damn wheel back. Unfollow. Mute. Disable “personalized” recommendations. Be brutal with your feed. It’s not about “going off the grid”—it’s about remembering you have a life outside the algorithm’s maze. Most importantly, recognize that the system is playing you. And you can play back.\n\n    Nobody said escaping the Matrix was comfy. But it beats being a dopamine-zombified cash cow for Big Tech.",
+      "keyPoints": [
+        "Algorithms constantly learn and adapt to keep you online longer.",
+        "Social feeds are engineered with variable rewards—just like casinos.",
+        "Your brain’s dopamine system is being exploited for profit.",
+        "You’re being tracked and tested on, every tap and scroll.",
+        "You are not the customer—your attention is the product.",
+        "Taking back control is possible, but requires effort and self-awareness.",
+        "Every minute you reclaim is a win against a trillion-dollar manipulation machine."
+    ],
+      "actionItems": [
+        "Audit your app usage—see which ones eat the most of your time.",
+        "Unfollow, mute, or block accounts that trigger mindless scrolling.",
+        "Disable or limit algorithmic recommendations for one week—notice the difference.",
+        "After every scrolling session, rate your mood: better, worse, or unchanged?",
+        "Replace 10 minutes of doomscrolling with literally anything else (a walk, a doodle, a real conversation).",
+        "Set app limits—even if you ignore them at first, keep trying.",
+        "Reflect: Are you making choices, or are the algorithms choosing for you?"
+    ],
+      "flashcards": [
+        {
+          "front": "What’s the true purpose of social media algorithms?",
+          "back": "To maximize your screen time so you see more ads.",
+          "emoji": "🕒",
+          "type": "harsh"
+        },
+        {
+          "front": "What’s 'variable reward' and why does it work?",
+          "back": "Random rewards keep your brain guessing and addicted, just like a slot machine.",
+          "emoji": "🎰",
+          "type": "fact"
+        },
+        {
+          "front": "How do algorithms learn about you?",
+          "back": "They track every swipe, like, pause, and comment to build a profile and predict your next move.",
+          "emoji": "🧑‍💻",
+          "type": "science"
+        },
+        {
+          "front": "Who is the product in social media?",
+          "back": "You are. Your attention and data are what’s being sold to advertisers.",
+          "emoji": "💸",
+          "type": "harsh"
+        },
+        {
+          "front": "How do you break free from algorithm control?",
+          "back": "Be intentional: unfollow, mute, block, and limit algorithmic suggestions.",
+          "emoji": "🔒",
+          "type": "action"
+        },
+        {
+          "front": "Why do you keep scrolling even when you know it’s bad?",
+          "back": "Dopamine and unpredictability keep your brain hooked for the next hit.",
+          "emoji": "🧠",
+          "type": "truth"
+        },
+        {
+          "front": "Are your choices really yours on social media?",
+          "back": "Not always. Algorithms nudge you into behaviors that benefit them.",
+          "emoji": "🎮",
+          "type": "truth"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What classic casino tactic do social media algorithms use to maximize your engagement?",
+        "correctAnswer": "Variable reward scheduling (random rewards)",
+        "wrongAnswer": "Fixed reward schedules with predictable outcomes",
+        "explanation": "Just like slot machines, social media feeds use unpredictable rewards to keep you hooked. Sometimes you get something good, sometimes you don't—that uncertainty drives addiction."
+      }
+    },
+    {
+      "title": "Breaking the Loop",
+      "description": "Science-Backed Ways to Stop Doomscrolling",
+      "systemIcon": "repeat.circle",
+      "image": "chapter3",
+      "readTime": 8,
+      "gemsReward": 15,
+      "chapter": 3,
+      "part": 1,
+      "color": "blue",
+      "content": "Let’s cut the crap: if you could break the doomscrolling habit by “just deciding to stop,” you wouldn’t be here. This isn’t about weak willpower. Social media is engineered to be addictive, and your brain is playing catch-up. But you can break the loop—if you stop fighting biology with wishful thinking and use actual science.\n\n    **Why Is It So Damn Hard to Stop?**\n    Every time you scroll, your brain releases a shot of dopamine—the “ooh, maybe something good!” chemical. You get micro-rewards for every new post, meme, or disaster headline. That loop gets burned into your brain. You crave another hit, even if the content is trash or makes you feel worse. This is what addiction looks like—except it’s socially acceptable and everyone’s doing it.\n\n    **Step 1: Interrupt the Pattern**\n    First rule of habit-breaking? Don’t rely on “self-control.” Willpower is like your phone battery—good luck if you’ve got 3% left. Instead, make your environment work for you. Move your most addictive apps off your home screen. Turn your phone grayscale (yes, ugly, but less tempting). Log out so it takes actual effort to re-enter. Set your lock screen to something brutally honest: “Are you doomscrolling again?”\n\n    **Step 2: Time-Lock the Temptation**\n    Use “stupid simple” science: If the habit is automatic, make it harder. Set a 5-minute timer when you open a social app. Promise yourself you’ll quit when it buzzes. Most people ignore their own promises, so use tech against itself: block apps after a set time or have a friend set your passcode. If you can’t trust yourself, trust technology to parent you.\n\n    **Step 3: Replace, Don’t Just Remove**\n    You won’t “stop scrolling” unless you swap in something else. You’re bored, tired, stressed, or avoiding something. Replace the doomscroll with another micro-habit: stand up, drink water, message a real person, do five push-ups (yes, really), or listen to a song. The point isn’t to become a productivity machine—it’s to break the zombie trance.\n\n    **Step 4: Make It Social—But in Real Life**\n    Studies show you’re more likely to change habits when you tell someone or, even better, make it a competition. Bet your roommate you can go a day with <30 minutes on Instagram. Winner gets free lunch. Humiliation is a powerful motivator—use it.\n\n    **Step 5: Forgive Yourself When You Mess Up**\n    You will mess up. That’s not failure, that’s being human. The key is to notice what triggered you, learn from it, and get back on the horse. Nobody is perfect, and the algorithm is relentless. You only lose if you give up for good.\n\n    Breaking the loop isn’t about heroic willpower—it’s about fighting smarter. Use science. Outwit your own instincts. Remember: every scroll you *don’t* make is a tiny rebellion against a trillion-dollar attention machine. Feels good, doesn’t it?",
+      "keyPoints": [
+        "Doomscrolling hijacks your dopamine system with unpredictable rewards.",
+        "Willpower alone rarely works—environmental tweaks and technology are more effective.",
+        "Time-based limits and app blockers disrupt compulsive scrolling.",
+        "Replacing doomscrolling with small, positive habits works better than pure avoidance.",
+        "Accountability and social competition make habit change stickier.",
+        "Perfection is a myth—messing up is normal, not a reason to quit."
+    ],
+      "actionItems": [
+        "Move your most distracting apps off your home screen.",
+        "Set your phone display to grayscale for a day—notice the urge difference.",
+        "Try a 5-minute app timer and actually close the app when it goes off.",
+        "Swap one scrolling session for a real-life micro-activity (text a friend, take a walk, etc).",
+        "Make a bet with someone on who can spend less time on social media this week.",
+        "Write down your trigger moments—when are you most likely to reach for your phone?",
+        "If you fail, log why, then try again. Progress, not perfection."
+    ],
+      "flashcards": [
+        {
+          "front": "Why does your brain crave scrolling?",
+          "back": "Dopamine rewards—every swipe could be a ‘win’ or surprise, so your brain keeps chasing the next hit.",
+          "emoji": "🧠",
+          "type": "science"
+        },
+        {
+          "front": "Does willpower alone work for breaking doomscrolling?",
+          "back": "Nope. You need to change your environment and use tech to block bad habits.",
+          "emoji": "🔋",
+          "type": "harsh"
+        },
+        {
+          "front": "What’s one proven way to stop scrolling?",
+          "back": "Set time-based limits and use app blockers to make it harder to fall into the loop.",
+          "emoji": "⏰",
+          "type": "action"
+        },
+        {
+          "front": "What should you do instead of just quitting cold turkey?",
+          "back": "Replace doomscrolling with tiny positive actions—move, text someone, do anything different.",
+          "emoji": "💡",
+          "type": "habit"
+        },
+        {
+          "front": "How can friends help you stop doomscrolling?",
+          "back": "Accountability—make it social, competitive, or at least public for real results.",
+          "emoji": "🤝",
+          "type": "fact"
+        },
+        {
+          "front": "What’s the most important thing when you slip up?",
+          "back": "Forgive yourself, learn from it, and keep going. Quitting isn’t failure—giving up is.",
+          "emoji": "🚀",
+          "type": "truth"
+        },
+        {
+          "front": "Why do ‘app detox’ challenges often fail?",
+          "back": "They focus on avoiding, not replacing. The brain needs a new habit, not just a void.",
+          "emoji": "🕳️",
+          "type": "truth"
+        }
+      ],
+      "quizQuestion": {
+        "question": "Which approach has the *least* chance of breaking your doomscrolling habit?",
+        "correctAnswer": "Relying only on willpower with no other changes",
+        "wrongAnswer": "Setting app limits and replacing scrolling with real activities",
+        "explanation": "Willpower is easily depleted and unreliable. Real change comes from altering your environment, routines, and using replacement habits—not just “trying harder.”"
+      }
+    },
+    {
+      "title": "Know Your Triggers",
+      "description": "Spotting the Moments You Reach for Your Phone",
+      "systemIcon": "exclamationmark.triangle.fill",
+      "image": "chapter4",
+      "readTime": 8,
+      "gemsReward": 15,
+      "chapter": 4,
+      "part": 1,
+      "color": "blue",
+      "content": "“I only checked my phone because I needed to…” Sure you did. Let’s get honest: doomscrolling isn’t a random accident. It’s a learned response to boredom, stress, anxiety, or literally any tiny moment when your brain thinks, “Well, this sucks. Maybe the phone will save me.” Spoiler: it never does.\n\n    **Trigger Warning (But Not That Kind)**\n    Your triggers are the emotional potholes and awkward silences that send your hand flying to your pocket faster than you can say “just five minutes.” These moments aren’t unique or mysterious—they’re embarrassingly predictable once you pay attention.\n\n    - Awkward pauses in conversation? Check phone.\n    - Waiting in line? Check phone.\n    - Commercial break? Check phone.\n    - Bad mood, bored, or just avoiding something? Phone, phone, phone.\n\n    The modern brain is so allergic to discomfort, it’ll risk digital misery to avoid three seconds of nothing.\n\n    **The Brain’s Evil Twin: Habit Loops**\n    Here’s how it works: Something uncomfortable happens (trigger). Your hand moves on autopilot (action). You get a short burst of distraction or relief (reward). Congrats, you’ve completed the habit loop—again. Now repeat it 100 times a day and wonder why you feel burnt out for no obvious reason.\n\n    **Triggers Love Company**\n    The phone isn’t the only villain. Your environment is full of cues:  \n    - The *ping* of a notification  \n    - The sight of your phone screen lighting up  \n    - Even just seeing someone else scroll (monkey see, monkey do, right?)\n\n    Most of the time, you’re not even making a conscious choice—you’re just running the same script over and over, like a glitchy NPC.\n\n    **Why Identifying Triggers Matters**\n    If you don’t know what sets you off, you’re doomed to scroll forever. Naming your triggers is the first step to actually changing your habits, instead of just watching another productivity video and calling it self-improvement.\n\n    **How to Spot Your Triggers (Pro Tips)**\n    - Keep a “trigger log” for a day: jot down every time you mindlessly grab your phone and what was happening just before.\n    - Ask yourself, “What am I actually feeling right now?” (Bored? Stressed? Avoiding a task?)\n    - Notice where you are and who you’re with—patterns will appear faster than a TikTok trend.\n    - If you can’t catch the trigger before you scroll, no problem—pause and rewind after.\n\n    **Bottom Line**\n    If you want to stop doomscrolling, you’ve got to stop lying to yourself about *why* you do it. Get honest, get curious, and get ready to outsmart your own lizard brain.  \n    (And if you’re doomscrolling right now, congrats, you just found another trigger.)",
+      "keyPoints": [
+        "Doomscrolling is triggered by boredom, discomfort, and habit—not just random chance.",
+        "Habit loops turn phone-checking into an automatic, mindless response.",
+        "Environmental cues (sounds, lights, other people) make triggers worse.",
+        "Tracking your triggers is the first step to breaking the cycle.",
+        "You can't change what you don't notice."
+    ],
+      "actionItems": [
+        "Keep a trigger log for a full day—note every moment you instinctively reach for your phone.",
+        "After every scroll, pause and ask: What was I trying to avoid?",
+        "Mute or disable as many notification sounds as possible.",
+        "Identify your ‘boredom zones’ (waiting rooms, lines, commercials) and prepare an alternative.",
+        "Tell a friend or roommate your main scrolling triggers—get roasted, then get better.",
+        "Every time you notice a trigger, do something ridiculous instead (jump, sing, dab)—break the script."
+    ],
+      "flashcards": [
+        {
+          "front": "What are ‘doomscrolling triggers’?",
+          "back": "Emotional, environmental, or situational cues that make you reach for your phone without thinking.",
+          "emoji": "⚡️",
+          "type": "concept"
+        },
+        {
+          "front": "Why do you reach for your phone when you’re bored?",
+          "back": "It’s a learned habit—your brain tries to dodge discomfort or awkwardness with digital distraction.",
+          "emoji": "😑",
+          "type": "science"
+        },
+        {
+          "front": "What’s a ‘habit loop’?",
+          "back": "Trigger → Action → Reward. The loop makes phone-checking automatic.",
+          "emoji": "🔁",
+          "type": "fact"
+        },
+        {
+          "front": "How can you start spotting your triggers?",
+          "back": "Log every time you check your phone and what happened right before.",
+          "emoji": "📓",
+          "type": "action"
+        },
+        {
+          "front": "Do notifications make triggers worse?",
+          "back": "Yes. Sounds, lights, and vibrations all cue you to check your phone—even if you didn’t want to.",
+          "emoji": "📲",
+          "type": "truth"
+        },
+        {
+          "front": "Can you break the script?",
+          "back": "Absolutely—by noticing triggers and swapping in a different action, you rewrite the habit.",
+          "emoji": "✂️",
+          "type": "habit"
+        },
+        {
+          "front": "Why do most people fail to change scrolling habits?",
+          "back": "Because they never figure out *what* triggers them—they blame willpower instead.",
+          "emoji": "🙈",
+          "type": "truth"
+        }
+      ],
+      "quizQuestion": {
+        "question": "Which of the following is NOT a common doomscrolling trigger?",
+        "correctAnswer": "Actually wanting to learn something specific",
+        "wrongAnswer": "Being bored or avoiding an awkward moment",
+        "explanation": "Most doomscrolling isn’t about learning—it’s a knee-jerk response to discomfort, boredom, or environmental cues."
+      }
+    },
+    {
+      "title": "Small Swaps, Big Wins",
+      "description": "Easy Replacements for Mindless Scrolling",
+      "systemIcon": "arrow.right.arrow.left.circle",
+      "image": "chapter5",
+      "readTime": 7,
+      "gemsReward": 15,
+      "chapter": 5,
+      "part": 1,
+      "color": "blue",
+      "content": "Newsflash: “Just don’t scroll” is advice that works about as well as “just relax” during a panic attack. If doomscrolling is a habit, it needs a *replacement*, not just removal. The trick? Swap your auto-scroll with something that doesn’t fry your brain or kill your productivity—or at least doesn’t make you feel dead inside.\n\n    **Why Replacing Is Better Than Quitting Cold Turkey**\n    Your brain hates a vacuum. If you yank away the endless content buffet and leave nothing in its place, you’re basically begging your mind to find *something*—usually, you end up right back at square one. The key is to give your brain a new, less-destructive snack.\n\n    **Quick, Realistic Swaps (No, You Don’t Have to Meditate on a Mountain)**\n    - Waiting in line? Listen to one song—bonus points if it’s an absolute banger.\n    - Commercial break? Stretch, do five squats, or make a meme in your notes app.\n    - Awkward silence? Send a random “hey” to someone you actually like (shocking, I know).\n    - Lunch break? Sketch, doodle, or start a micro-journal entry (rage allowed).\n    - Bored out of your skull? Try a micro-habit: drink water, step outside, or literally stare at the ceiling and let your mind wander. Daydreaming isn’t wasted time.\n\n    **Why “Better” Doesn’t Have to Mean “Productive”**\n    This isn’t about squeezing hustle culture out of every minute. It’s about picking things that won’t leave you feeling emptier than your group chat at 3am. Your swap can be fun, pointless, creative, or slightly dumb—as long as it’s not mindless scrolling.\n\n    **How to Find Your Best Swaps**\n    Notice *when* you scroll the most, then plan an easy backup. You’ll fail sometimes. That’s normal. The point is to build a new default so you don’t default to doom.\n\n    **Examples That Actually Work**\n    - Turn off Wi-Fi for ten minutes and see what you do.\n    - Keep a physical “swap list” somewhere obvious.\n    - If you catch yourself mid-scroll, switch to a swap activity for just 2 minutes. Sometimes, that’s all it takes.\n\n    **Why Does This Even Matter?**\n    Every minute you reclaim is a win. Your future self isn’t going to thank you for one more “influencer drama” binge. But they *will* thank you for every time you swapped digital junk food for literally anything else.",
+      "keyPoints": [
+        "You need to replace mindless scrolling with something, not just remove it.",
+        "Your brain craves quick rewards—give it better, real-life alternatives.",
+        "Easy, micro swaps are more effective than big, dramatic changes.",
+        "Your swaps don’t have to be productive—just not destructive.",
+        "Failing sometimes is part of the process; what matters is building new habits."
+    ],
+      "actionItems": [
+        "Make a list of five things you can do instead of scrolling.",
+        "Try a swap during your next ‘bored’ moment—start tiny.",
+        "Share your favorite swap with a friend and try theirs.",
+        "Keep a notepad or sketchbook handy for commercial breaks.",
+        "Next time you catch yourself scrolling, set a two-minute timer and switch to a swap.",
+        "Make your phone less accessible during trigger times (leave it in another room, use airplane mode, etc)."
+    ],
+      "flashcards": [
+        {
+          "front": "Why doesn’t quitting doomscrolling cold turkey work?",
+          "back": "Because your brain needs a replacement habit, not just a void.",
+          "emoji": "🥱",
+          "type": "truth"
+        },
+        {
+          "front": "What’s an example of a quick, realistic swap?",
+          "back": "Listening to music, doodling, stretching, or sending a message to a friend.",
+          "emoji": "🎵",
+          "type": "habit"
+        },
+        {
+          "front": "Do replacement activities have to be productive?",
+          "back": "Nope. They just have to be better for your brain and mood than mindless scrolling.",
+          "emoji": "😌",
+          "type": "truth"
+        },
+        {
+          "front": "What should you do if you fail and go back to scrolling?",
+          "back": "Try again. Building new habits is about progress, not perfection.",
+          "emoji": "🔄",
+          "type": "action"
+        },
+        {
+          "front": "What’s a simple way to make swaps easier?",
+          "back": "Keep a swap list visible and make your phone less accessible during trigger times.",
+          "emoji": "📋",
+          "type": "action"
+        },
+        {
+          "front": "Does every reclaimed minute actually matter?",
+          "back": "Yes! Small wins add up and make a real difference to your mental health.",
+          "emoji": "⏳",
+          "type": "truth"
+        },
+        {
+          "front": "What’s one silly but effective swap?",
+          "back": "Literally staring at the ceiling and letting your mind wander. Try it.",
+          "emoji": "👀",
+          "type": "memey"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What’s the most effective way to replace mindless scrolling?",
+        "correctAnswer": "Swap it with a small, easy, real-life action",
+        "wrongAnswer": "Try to rely on willpower and avoid your phone completely",
+        "explanation": "Willpower fails when you’re tired or bored. Swapping scrolling for another quick activity builds a new, healthier habit loop."
+      }
+    },
+    {
+      "title": "Sleep Sabotage",
+      "description": "Why Late-Night Scrolling Wrecks Your Rest",
+      "systemIcon": "moon.zzz.fill",
+      "image": "chapter6",
+      "readTime": 7,
+      "gemsReward": 15,
+      "chapter": 6,
+      "part": 1,
+      "color": "blue",
+      "content": "Let’s talk about the most popular bedtime routine nobody wants to admit: doomscroll until your eyeballs burn, pass out with your phone on your chest, then wake up feeling like a fossil in a hoodie. Late-night scrolling is the digital version of drinking coffee at midnight and then complaining you can’t sleep.\n\n**Why You’re Not Just “Bad at Sleeping”**\nYour self-control is at rock bottom after 10pm. That genius brain of yours? Asleep on the job, while your thumbs and the algorithm run wild. You open your phone for \"just five minutes\" and wake up three hours later, deep into niche celebrity drama and conspiracy TikToks.\n\n**Blue Light: Nature’s Way of Messing With You**\nYour phone blasts blue light into your eyes, basically yelling at your brain, \"It’s daytime! Stay awake!\" This kills your melatonin, your body’s natural sleep hormone, so you stay wired. Endless content means your mind never gets to chill—just more stuff to stress about at 2am.\n\n**Sleep Debt: Why You’re a Zombie**\nLose a little sleep once? You’ll survive. Make doomscrolling your nightly ritual and you start collecting “sleep debt”—which your body collects like a payday loan: interest, penalties, and an extra dose of brain fog. Over time, you’re more anxious, less focused, and look/feel about a decade older than you should.\n\n**The Doomscrolling Hangover**\nThat groggy, cranky feeling in the morning? It’s not a mystery illness—it’s what happens when you swap sleep for memes. Your mood tanks, your focus disappears, and you’re more likely to keep doomscrolling just to avoid feeling bad.\n\n**How to Actually Win at Sleep**\n- Set a bedtime alarm that says “PUT THE PHONE DOWN,” not “time for bonus doomscroll.”\n- Charge your phone on the other side of the room—out of reach, out of trouble.\n- Make a wind-down ritual: a boring book, journaling, stretching, or just staring at the ceiling like the good old days.\n- Blue light filters help a bit, but don’t kid yourself—the real fix is less content, not just less color.\n- Make it a challenge: no phone in bed for a week. Loser has to share their most embarrassing late-night search history. That’s motivation.\n\nBottom line: The algorithm doesn’t care if you sleep, but your brain (and every part of your life) definitely does.",
+      "keyPoints": [
+        "Late-night scrolling destroys sleep quality and quantity.",
+        "Blue light from screens tricks your brain into staying awake and kills melatonin.",
+        "Doomscrolling at night increases anxiety, making sleep even harder.",
+        "Chronic sleep debt wrecks memory, focus, and your mood.",
+        "You need boundaries and a proper wind-down to actually rest."
+      ],
+      "actionItems": [
+        "Set a real bedtime alarm—one that tells you to put the phone down.",
+        "Charge your phone across the room or outside the bedroom.",
+        "Swap scrolling for a boring wind-down routine: book, stretch, journal, anything but content.",
+        "Try a blue light filter—but don’t use it as an excuse to keep scrolling.",
+        "Notice how your mood and focus change after a week of zero phone before bed.",
+        "Make a bet with a friend: first one to doomscroll in bed has to do something embarrassing."
+      ],
+      "flashcards": [
+        {
+          "front": "Why does blue light wreck your sleep?",
+          "back": "It tricks your brain into thinking it’s daytime and blocks melatonin, your sleep hormone.",
+          "emoji": "🔵",
+          "type": "science"
+        },
+        {
+          "front": "What’s ‘sleep debt’?",
+          "back": "Lost sleep that piles up over time, draining your energy and brainpower.",
+          "emoji": "😴",
+          "type": "concept"
+        },
+        {
+          "front": "Why is late-night scrolling so hard to resist?",
+          "back": "Your willpower is gone, and endless content hijacks your tired brain.",
+          "emoji": "🌙",
+          "type": "truth"
+        },
+        {
+          "front": "What actually helps you sleep better?",
+          "back": "Put your phone out of reach and make a real bedtime routine.",
+          "emoji": "📵",
+          "type": "action"
+        },
+        {
+          "front": "What does a ‘doomscroll hangover’ feel like?",
+          "back": "Groggy, unfocused, cranky—basically like a sleep-deprived zombie.",
+          "emoji": "🥱",
+          "type": "truth"
+        },
+        {
+          "front": "Can blue light filters fix doomscrolling?",
+          "back": "Nope. Less content, not just less color, is the real fix.",
+          "emoji": "🛌",
+          "type": "myth"
+        },
+        {
+          "front": "What’s a fun way to quit scrolling in bed?",
+          "back": "Challenge a friend—loser shares their embarrassing search history.",
+          "emoji": "🎲",
+          "type": "memey"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What’s the single best way to avoid doomscrolling at night?",
+        "correctAnswer": "Put your phone out of reach and start a real wind-down routine",
+        "wrongAnswer": "Just use a blue light filter and hope for the best",
+        "explanation": "Blue light filters help, but actually putting your phone away and winding down is the only way to break the cycle for good."
+      }
+    },
+    {
+      "title": "Master Your Focus",
+      "description": "Pomodoro, Deep Work, and Beating Distraction",
+      "systemIcon": "timer",
+      "image": "chapter7",
+      "readTime": 9,
+      "gemsReward": 15,
+      "chapter": 7,
+      "part": 2,
+      "color": "green",
+      "content": "Let’s be honest: if attention spans were a sport, most people today wouldn’t make it past the starting whistle. Every ping, meme, and 'urgent' notification has trained your brain to bounce around like a cat on Red Bull. But here’s the plot twist: you can absolutely retrain your brain for focus—and it’s not as hard as your phone wants you to believe.\n\n**Why Your Focus is Wrecked**\nModern tech is designed to steal your attention. Apps, ads, and algorithms want you distracted, because distracted people scroll more. Your brain isn’t broken—your environment is rigged. It’s time to hack back.\n\n**The Pomodoro Technique: Focus for Mortals**\nLet’s be real: nobody focuses for hours straight. Enter Pomodoro. Set a timer for 25 minutes, do ONE thing, then take a 5-minute break. Repeat. It’s so simple, you’ll wonder why you haven’t tried it. Bonus: your productivity goes up, your guilt goes down, and you feel less like a goldfish.\n\n**Deep Work: Superpower Mode**\nDeep work is the rare state where you get more done in an hour than most people do in a day. But it takes boundaries: silence your phone, clear your desk, warn your friends you’re 'off the grid.' Awkward at first, legendary once you get the hang of it.\n\n**Focus Fortress: Build Your Own**\n- Clean your space—physical clutter equals mental clutter.\n- Headphones on, distractions off. Lofi beats, nature sounds, or literal white noise if you must.\n- Block apps and websites that hijack your attention. There’s tech for that—use it.\n- Create a pre-focus ritual: coffee, stretch, playlist, whatever tells your brain, 'Game on.'\n\n**Multitasking: The Great Lie**\nSpoiler: Multitasking just makes you suck at everything at once. Your brain can do one thing well or several things badly. Pick one, finish it, then move on. Your future self will thank you.\n\n**The Real Prize**\nRegaining your focus isn’t about becoming a productivity machine—it’s about getting your life, energy, and sanity back. The more you practice, the less power the scroll has over you. Main character energy, unlocked.",
+      "keyPoints": [
+        "Most people’s focus is destroyed by constant digital interruptions.",
+        "Pomodoro is an easy, science-backed way to rebuild your attention span.",
+        "Deep work unlocks massive productivity, but requires boundaries.",
+        "Physical and digital clutter wreck focus—clean up and block distractions.",
+        "Multitasking is a myth; single-tasking wins.",
+        "Real focus feels awkward at first but pays off fast.",
+        "You can reclaim your brain with daily practice."
+      ],
+      "actionItems": [
+        "Do a Pomodoro session today: 25 minutes focus, 5 minutes break.",
+        "Silence or hide your phone before starting deep work.",
+        "Build a pre-focus ritual—music, coffee, stretch, etc.",
+        "Clear your desk and digital clutter before your next big task.",
+        "Use an app or website blocker during your work blocks.",
+        "Restart your timer whenever you get distracted—no guilt.",
+        "Notice what time of day you focus best and plan your hardest work then."
+      ],
+      "flashcards": [
+        {
+          "front": "What is the Pomodoro Technique?",
+          "back": "A time method: 25 minutes focused work, 5 minutes break, repeat.",
+          "emoji": "🍅",
+          "type": "concept"
+        },
+        {
+          "front": "Why is it so hard to focus?",
+          "back": "Modern tech is built to distract you, not help you focus.",
+          "emoji": "📱",
+          "type": "truth"
+        },
+        {
+          "front": "What is ‘deep work’?",
+          "back": "A distraction-free state where you get more done in less time.",
+          "emoji": "🏗️",
+          "type": "fact"
+        },
+        {
+          "front": "Does multitasking actually work?",
+          "back": "No. It just means you’re doing multiple things badly.",
+          "emoji": "🪓",
+          "type": "myth"
+        },
+        {
+          "front": "What’s a quick way to boost focus?",
+          "back": "Clean your workspace and silence your phone.",
+          "emoji": "🧹",
+          "type": "action"
+        },
+        {
+          "front": "How can rituals help with focus?",
+          "back": "They cue your brain that it’s time to concentrate.",
+          "emoji": "🔑",
+          "type": "truth"
+        },
+        {
+          "front": "What’s the most important thing if you get distracted?",
+          "back": "Restart the timer, no shame—progress beats perfection.",
+          "emoji": "🔄",
+          "type": "action"
+        }
+      ],
+      "quizQuestion": {
+        "question": "Why is multitasking a productivity myth?",
+        "correctAnswer": "Your brain can only focus on one thing at a time; switching makes everything worse.",
+        "wrongAnswer": "You’re not drinking enough coffee",
+        "explanation": "Switching tasks splits your focus and increases mistakes. One thing at a time is the secret to real progress."
+      }
+    },
+    {
+      "title": "Declutter Your Feed",
+      "description": "Building a Healthier Social Media Life",
+      "systemIcon": "trash.circle.fill",
+      "image": "chapter8",
+      "readTime": 4,
+      "gemsReward": 15,
+      "chapter": 8,
+      "part": 2,
+      "color": "green",
+      "content": "Let’s be honest: your feed is a digital landfill, and it’s overdue for a spring cleaning. Most people follow hundreds of accounts they don’t even like, subscribe to meme pages that peaked in 2017, and get bombarded by influencers selling junk nobody needs. No wonder scrolling feels more exhausting than productive.\n\n**Your Feed = Your Brain Food**\nEvery post is a snack for your mind. If you only eat junk, you feel like junk. Good news: you actually control the menu.\n\n**Unfollow, Mute, Block: Your New Superpowers**\nStop just scrolling past things you hate—remove them. Unfollow randoms, mute the people you can’t unfollow (sorry, Aunt Karen), and block anything toxic. No drama. Just better vibes.\n\n**Why Do You Keep the Trash?**\nMaybe it’s FOMO. Maybe you’re scared someone will notice. Maybe you just haven’t noticed how much digital garbage you’ve collected. But the real FOMO? Missing out on a feed that doesn’t kill your mood.\n\n**Signs You Need a Feed Detox**\n- You sigh or rage-scroll more than you laugh.\n- It’s ads, ads, and more ads.\n- You forgot why you followed half these people.\n- After scrolling, you feel worse than before.\n\n**How to Actually Declutter**\n- Unfollow 10 accounts right now. Don’t even think.\n- Mute posts and stories from energy vampires.\n- Find new creators or pages that make you actually feel good.\n- Set up a close friends list for the people who matter.\n- Schedule a monthly ‘feed detox’—set a reminder.\n\n**What Happens Next**\nSuddenly, your feed is lighter, happier, and you’re scrolling less. You actually enjoy the content you see. The algorithm cries a little. You win.",
+      "keyPoints": [
+        "Your feed affects your mood, thoughts, and self-worth.",
+        "Unfollow, mute, and block are must-use tools.",
+        "Digital clutter builds up fast and kills your vibe.",
+        "Decluttering reduces negativity and endless scrolling.",
+        "You won’t miss out on anything that matters—just the noise."
+      ],
+      "actionItems": [
+        "Unfollow or mute 10+ accounts today.",
+        "Block one toxic or annoying account.",
+        "Curate a list of uplifting creators or pages.",
+        "Set a monthly reminder for feed cleanup.",
+        "Reflect on your mood after a declutter session.",
+        "Challenge a friend to clean up their feed too."
+      ],
+      "flashcards": [
+        {
+          "front": "Why does your feed matter?",
+          "back": "It’s mental nutrition—junk in, junk out.",
+          "emoji": "🧠",
+          "type": "concept"
+        },
+        {
+          "front": "Which tools keep your feed clean?",
+          "back": "Unfollow, mute, and block—no guilt needed.",
+          "emoji": "🧹",
+          "type": "action"
+        },
+        {
+          "front": "How do you know your feed is toxic?",
+          "back": "You feel annoyed, drained, or down after scrolling.",
+          "emoji": "😠",
+          "type": "fact"
+        },
+        {
+          "front": "Will decluttering make you miss out?",
+          "back": "No. You’ll miss the stress, not the good stuff.",
+          "emoji": "🙅‍♂️",
+          "type": "truth"
+        },
+        {
+          "front": "What’s the fastest way to improve your feed?",
+          "back": "Unfollow or mute what you don’t like. Easy.",
+          "emoji": "🚫",
+          "type": "action"
+        },
+        {
+          "front": "How often should you declutter?",
+          "back": "Once a month, or when your mood drops.",
+          "emoji": "🗓️",
+          "type": "habit"
+        },
+        {
+          "front": "What’s the end goal?",
+          "back": "A feed that boosts you up, not down.",
+          "emoji": "😊",
+          "type": "goal"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What’s a sure sign your feed needs a detox?",
+        "correctAnswer": "You feel worse after scrolling.",
+        "wrongAnswer": "You laugh more and feel inspired.",
+        "explanation": "If your feed drags you down, declutter it for your own sanity."
+      }
+    },
+    {
+      "title": "Digital Boundaries",
+      "description": "How to Set (and Actually Keep) Phone Limits",
+      "systemIcon": "lock.shield",
+      "image": "chapter9",
+      "readTime": 5,
+      "gemsReward": 15,
+      "chapter": 9,
+      "part": 2,
+      "color": "green",
+      "content": "Let’s get honest: Your phone doesn’t just want your attention—it wants custody of your soul. Setting digital boundaries isn’t about going “off the grid” or turning into a tech hermit. It’s about not letting your screen run your life like a needy ex.\n\n**Why You Suck at Phone Limits**\nHere’s the truth: Willpower is weak at 11pm. Apps are built to break you. You can’t win with vibes and good intentions alone—you need real boundaries and real consequences.\n\n**Types of Boundaries (Pick Your Poison)**\n- **Time limits:** Set daily app limits. Actually respect them.\n- **No-phone zones:** Ban phones at the dinner table, in bed, or anywhere you want to be a real human.\n- **Screen-free hours:** Block out an hour a day (or a full morning) where your phone is in jail and you’re living life.\n- **Auto-do not disturb:** Schedule DND for work, sleep, and sanity breaks.\n\n**How to Actually Keep Them**\n- Make boundaries visible. Sticky notes, home screen widgets, “are you sure?” pop-ups—whatever slows you down.\n- Use tech to fight tech: app blockers, downtime features, or even a real lock box for your phone (yes, that’s a thing).\n- Tell people your limits! Social accountability is a cheat code. Your friends will roast you if you cheat.\n- When you slip up (and you will), don’t go nuclear. Reset and try again. Progress is what matters.\n\n**Boundaries Aren’t Punishment—They’re Freedom**\nEvery time you say “no” to the scroll, you say “yes” to something that actually matters. More energy, better focus, real conversations, and a chance to remember what it’s like to be bored (which is secretly a superpower).\n\nIf you want your phone to work for you—not the other way around—boundaries are your best defense. Set them, keep them, tweak them, and start winning back your life.",
+      "keyPoints": [
+        "Phones and apps are designed to break your willpower.",
+        "You need actual boundaries, not just good intentions.",
+        "Types: time limits, no-phone zones, screen-free hours, and DND modes.",
+        "Make boundaries visible and use tech tools to enforce them.",
+        "Messing up is normal—reset, don’t quit.",
+        "Boundaries aren’t punishment; they give you more freedom."
+      ],
+      "actionItems": [
+        "Set app time limits on your most distracting apps—actually stick to them.",
+        "Make at least one space in your life a no-phone zone.",
+        "Schedule one hour a day (minimum) that’s totally screen-free.",
+        "Try a phone lock box or app blocker for the next week.",
+        "Announce your new boundary to a friend or family member—let them hold you to it.",
+        "When you break a rule, reset and try again instead of giving up."
+      ],
+      "flashcards": [
+        {
+          "front": "Why are phone boundaries so hard to keep?",
+          "back": "Apps are designed to grab your attention and break your willpower.",
+          "emoji": "🤳",
+          "type": "truth"
+        },
+        {
+          "front": "What’s a no-phone zone?",
+          "back": "An area (like dinner table or bedroom) where your phone is banned.",
+          "emoji": "🚫",
+          "type": "habit"
+        },
+        {
+          "front": "How can you make boundaries stick?",
+          "back": "Use tech tools, make rules visible, and get accountability.",
+          "emoji": "📵",
+          "type": "action"
+        },
+        {
+          "front": "What should you do if you slip up?",
+          "back": "Don’t give up. Reset and try again.",
+          "emoji": "🔄",
+          "type": "truth"
+        },
+        {
+          "front": "Are boundaries punishment?",
+          "back": "Nope. They’re how you win back your time and freedom.",
+          "emoji": "🕊️",
+          "type": "goal"
+        },
+        {
+          "front": "What’s one trick to stick to limits?",
+          "back": "Tell someone your rule—social pressure works.",
+          "emoji": "💬",
+          "type": "tip"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What’s the best way to make a phone boundary stick?",
+        "correctAnswer": "Use tech tools and social accountability",
+        "wrongAnswer": "Rely on willpower alone",
+        "explanation": "Tech is built to break willpower. Use tools and let others hold you accountable."
+      }
+    },
+    {
+      "title": "Stress & The Scroll",
+      "description": "Mindfulness Hacks for Anxious Times",
+      "systemIcon": "wind",
+      "image": "chapter10",
+      "readTime": 5,
+      "gemsReward": 15,
+      "chapter": 10,
+      "part": 2,
+      "color": "green",
+      "content": "Feeling anxious? Here’s what most people do: grab their phone, scroll mindlessly, and pray that endless memes will drown out the stress. Spoiler: It never works. Doomscrolling is the digital version of stress-eating an entire pizza—briefly distracting, but leaves you worse off and somehow still hungry.\n\n**Why Scrolling Feels Like Relief (But Isn’t)**\nYour brain loves quick fixes, and your phone offers a buffet of tiny dopamine hits. But endless scrolling just piles on new worries, drama, and outrage. Congrats, now you’re stressed *and* annoyed.\n\n**Mindfulness: The Only Real Hack**\nInstead of letting your attention get hijacked by every notification, mindfulness means actually noticing your thoughts, feelings, and surroundings—even the awkward or anxious ones. It’s not about zoning out; it’s about tuning in, on purpose, without immediately diving for the phone.\n\n**Easy, Zero-Prep Mindfulness Tricks**\n- Try “box breathing”: Inhale 4, hold 4, exhale 4, hold 4. Repeat. Your brain will thank you.\n- Name five things you can see, hear, or feel right now—get out of your head and into the present.\n- Put your phone face-down, close your eyes, and notice what’s actually happening in your body. (Spoiler: You’re not dying; you’re just anxious.)\n- When you feel the urge to scroll, pause and ask: \"What am I really feeling?\" Half the time, it’s just boredom or stress in disguise.\n\n**When in Doubt, Breathe Out**\nYou don’t need incense or a meditation app. Just give your brain a literal minute to chill. Your stress will drop, and—bonus—you’ll remember you have a life outside the algorithm.\n\nThe more you practice, the less control the scroll has over your mood. Mindfulness isn’t magic, but it’s the next best thing to uninstalling social media entirely (which, let’s be real, isn’t happening).",
+      "keyPoints": [
+        "Scrolling is a fake fix for stress—usually makes things worse.",
+        "Mindfulness is about paying attention to the present moment.",
+        "Simple breathing and grounding tricks can cut anxiety fast.",
+        "Pausing before you scroll builds real self-control.",
+        "You don’t need fancy apps—just practice noticing your thoughts and body."
+      ],
+      "actionItems": [
+        "Next time you feel anxious, pause before picking up your phone.",
+        "Try box breathing for one minute—notice the difference.",
+        "List five things you can see, hear, or feel right now.",
+        "Put your phone down and just breathe for 30 seconds.",
+        "Ask yourself what you’re actually feeling before you scroll.",
+        "Challenge yourself to go one hour without doomscrolling during stress."
+      ],
+      "flashcards": [
+        {
+          "front": "Does scrolling actually reduce stress?",
+          "back": "No. It distracts you but usually makes you feel worse after.",
+          "emoji": "📱",
+          "type": "truth"
+        },
+        {
+          "front": "What’s mindfulness?",
+          "back": "Paying attention to your thoughts and feelings, right now, without judging them.",
+          "emoji": "🧘",
+          "type": "concept"
+        },
+        {
+          "front": "What’s a quick mindfulness trick?",
+          "back": "Box breathing: inhale 4, hold 4, exhale 4, hold 4.",
+          "emoji": "🌬️",
+          "type": "habit"
+        },
+        {
+          "front": "How does mindfulness help with phone addiction?",
+          "back": "It helps you notice the urge to scroll and pause before acting.",
+          "emoji": "⏸️",
+          "type": "fact"
+        },
+        {
+          "front": "Do you need special apps to practice mindfulness?",
+          "back": "Nope. All you need is a minute and your own attention.",
+          "emoji": "⌛",
+          "type": "myth"
+        },
+        {
+          "front": "What’s the best first step when feeling stressed?",
+          "back": "Pause, breathe, and check in with your body—not your phone.",
+          "emoji": "🫁",
+          "type": "action"
+        }
+      ],
+      "quizQuestion": {
+        "question": "What’s a real way to calm phone-driven stress?",
+        "correctAnswer": "Pause and do box breathing for a minute.",
+        "wrongAnswer": "Scroll through social media until you feel better.",
+        "explanation": "Breathing and mindfulness cut anxiety. Scrolling just buries it deeper."
+      }
+    }
+
+
+
+
+
+  ]
+}

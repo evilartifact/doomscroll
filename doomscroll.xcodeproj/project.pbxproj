@@ -6,6 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01C0277D91F88C7FB3D236BA /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589CD7D9ABCA9853FD6E806A /* TotalActivityView.swift */; };
+		5E95FAB8948BA4F4FEE9873C /* doomscrollReportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65670D907A9DE1510942DDA /* doomscrollReportExtension.swift */; };
+		6698DF3D07F3529FCAE77574 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1590BDD809872593AA778F8 /* DeviceActivity.framework */; };
+		8AD00512F9A56B38B127C375 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1EC7C2D52D8723C44127D3 /* SwiftUI.framework */; };
+		9EE2849A82FCCDB6A190A94E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46819435380C9E57D7B86C93 /* Foundation.framework */; };
+		C126087E2E1AC7B300429A8D /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C126087D2E1AC7B300429A8D /* ManagedSettings.framework */; };
+		C12608862E1AC7B300429A8D /* doomscrollshield.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C126087B2E1AC7B300429A8D /* doomscrollshield.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C12608912E1AC7CE00429A8D /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C126087D2E1AC7B300429A8D /* ManagedSettings.framework */; };
+		C12608932E1AC7CE00429A8D /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12608922E1AC7CE00429A8D /* ManagedSettingsUI.framework */; };
+		C126089B2E1AC7CE00429A8D /* doomscrollshieldconfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C12608902E1AC7CE00429A8D /* doomscrollshieldconfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1FE29112E21F5FB00678441 /* doomscrollReportExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C1FE29102E21F5FA00678440 /* doomscrollReportExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C12607892E198E9300429A8D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +35,97 @@
 			remoteGlobalIDString = C126077A2E198E9000429A8D;
 			remoteInfo = doomscroll;
 		};
+		C12608842E1AC7B300429A8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12607732E198E9000429A8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C126087A2E1AC7B300429A8D;
+			remoteInfo = doomscrollshield;
+		};
+		C12608992E1AC7CE00429A8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12607732E198E9000429A8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C126088F2E1AC7CE00429A8D;
+			remoteInfo = doomscrollshieldconfig;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		829CC4D30C041022FBECF26B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C126088B2E1AC7B300429A8D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C12608862E1AC7B300429A8D /* doomscrollshield.appex in Embed Foundation Extensions */,
+				C126089B2E1AC7CE00429A8D /* doomscrollshieldconfig.appex in Embed Foundation Extensions */,
+				C1FE29112E21F5FB00678441 /* doomscrollReportExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A7BF145321571D1BBBD06B7 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FamilyControls.framework; sourceTree = "<group>"; };
+		26DFECB8DE1461EE9E62E8BC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		33EEDA2B6CA7614F8ECE4DBC /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FamilyControls.framework; sourceTree = "<group>"; };
+		4382A4EAFEC6653D8C073EA5 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ManagedSettings.framework; sourceTree = "<group>"; };
+		46819435380C9E57D7B86C93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4E206EE4E4821BE2FCB2EA22 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		589CD7D9ABCA9853FD6E806A /* TotalActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TotalActivityView.swift; path = doomscrollReportExtension/TotalActivityView.swift; sourceTree = "<group>"; };
+		73F633A317E5E735074E8E7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = doomscrollReportExtension/Info.plist; sourceTree = "<group>"; };
+		757CDE4D7E5F4EF797834799 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		81AADF7307EE85DEC48625B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = doomscrollReportExtension/Info.plist; sourceTree = "<group>"; };
+		90C8A20A175D000CD0901282 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		9D1EC7C2D52D8723C44127D3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
+		A8446DF0E1B331C8F2D1FB3C /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ManagedSettings.framework; sourceTree = "<group>"; };
 		C126077B2E198E9000429A8D /* doomscroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doomscroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12607882E198E9300429A8D /* doomscrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doomscrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12607922E198E9300429A8D /* doomscrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doomscrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C126087B2E1AC7B300429A8D /* doomscrollshield.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = doomscrollshield.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C126087D2E1AC7B300429A8D /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		C12608902E1AC7CE00429A8D /* doomscrollshieldconfig.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = doomscrollshieldconfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12608922E1AC7CE00429A8D /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		C1FE29102E21F5FA00678440 /* doomscrollReportExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = doomscrollReportExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26EFB90081DF41B3354D800 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
+		C65670D907A9DE1510942DDA /* doomscrollReportExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = doomscrollReportExtension.swift; path = doomscrollReportExtension/doomscrollReportExtension.swift; sourceTree = "<group>"; };
+		D0BF61150C84E9F5E2EDB2CD /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		D1590BDD809872593AA778F8 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		D45E8D54B857B6BF059CE0F5 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceActivity.framework; sourceTree = "<group>"; };
+		DC85B5FA4BDD4CB5F7101907 /* doomscrollReportExtension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; name = doomscrollReportExtension.entitlements; path = doomscrollReportExtension/doomscrollReportExtension.entitlements; sourceTree = "<group>"; };
+		DF426BE757061ED2690307D4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
+		E436FD9880347889095EE24C /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/DeviceActivity.framework; sourceTree = DEVELOPER_DIR; };
+		E456B0F4C0FC426C67186E5F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C12608872E1AC7B300429A8D /* Exceptions for "doomscrollshield" folder in "doomscrollshield" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C126087A2E1AC7B300429A8D /* doomscrollshield */;
+		};
+		C126089C2E1AC7CE00429A8D /* Exceptions for "doomscrollshieldconfig" folder in "doomscrollshieldconfig" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C126088F2E1AC7CE00429A8D /* doomscrollshieldconfig */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C126077D2E198E9000429A8D /* doomscroll */ = {
@@ -45,9 +143,35 @@
 			path = doomscrollUITests;
 			sourceTree = "<group>";
 		};
+		C126087F2E1AC7B300429A8D /* doomscrollshield */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C12608872E1AC7B300429A8D /* Exceptions for "doomscrollshield" folder in "doomscrollshield" target */,
+			);
+			path = doomscrollshield;
+			sourceTree = "<group>";
+		};
+		C12608942E1AC7CE00429A8D /* doomscrollshieldconfig */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C126089C2E1AC7CE00429A8D /* Exceptions for "doomscrollshieldconfig" folder in "doomscrollshieldconfig" target */,
+			);
+			path = doomscrollshieldconfig;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		581FB41BB91845821BFFA544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE2849A82FCCDB6A190A94E /* Foundation.framework in Frameworks */,
+				6698DF3D07F3529FCAE77574 /* DeviceActivity.framework in Frameworks */,
+				8AD00512F9A56B38B127C375 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C12607782E198E9000429A8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,16 +193,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C12608782E1AC7B300429A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C126087E2E1AC7B300429A8D /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C126088D2E1AC7CE00429A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12608912E1AC7CE00429A8D /* ManagedSettings.framework in Frameworks */,
+				C12608932E1AC7CE00429A8D /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ADD89F9A6FB01115B5A0CD3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				46819435380C9E57D7B86C93 /* Foundation.framework */,
+				E436FD9880347889095EE24C /* DeviceActivity.framework */,
+				26DFECB8DE1461EE9E62E8BC /* SwiftUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B47F6E4A3A4452C8576B3D85 /* doomscrollReportExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C65670D907A9DE1510942DDA /* doomscrollReportExtension.swift */,
+				589CD7D9ABCA9853FD6E806A /* TotalActivityView.swift */,
+				81AADF7307EE85DEC48625B5 /* Info.plist */,
+				DC85B5FA4BDD4CB5F7101907 /* doomscrollReportExtension.entitlements */,
+			);
+			name = doomscrollReportExtension;
+			sourceTree = "<group>";
+		};
 		C12607722E198E9000429A8D = {
 			isa = PBXGroup;
 			children = (
 				C126077D2E198E9000429A8D /* doomscroll */,
 				C126078B2E198E9300429A8D /* doomscrollTests */,
 				C12607952E198E9300429A8D /* doomscrollUITests */,
+				C126087F2E1AC7B300429A8D /* doomscrollshield */,
+				C12608942E1AC7CE00429A8D /* doomscrollshieldconfig */,
+				B47F6E4A3A4452C8576B3D85 /* doomscrollReportExtension */,
+				C126087C2E1AC7B300429A8D /* Frameworks */,
 				C126077C2E198E9000429A8D /* Products */,
+				73F633A317E5E735074E8E7D /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,13 +255,57 @@
 				C126077B2E198E9000429A8D /* doomscroll.app */,
 				C12607882E198E9300429A8D /* doomscrollTests.xctest */,
 				C12607922E198E9300429A8D /* doomscrollUITests.xctest */,
+				C126087B2E1AC7B300429A8D /* doomscrollshield.appex */,
+				C12608902E1AC7CE00429A8D /* doomscrollshieldconfig.appex */,
+				C1FE29102E21F5FA00678440 /* doomscrollReportExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C126087C2E1AC7B300429A8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C126087D2E1AC7B300429A8D /* ManagedSettings.framework */,
+				C12608922E1AC7CE00429A8D /* ManagedSettingsUI.framework */,
+				4ADD89F9A6FB01115B5A0CD3 /* iOS */,
+				D45E8D54B857B6BF059CE0F5 /* DeviceActivity.framework */,
+				33EEDA2B6CA7614F8ECE4DBC /* FamilyControls.framework */,
+				A8446DF0E1B331C8F2D1FB3C /* ManagedSettings.framework */,
+				757CDE4D7E5F4EF797834799 /* DeviceActivity.framework */,
+				1A7BF145321571D1BBBD06B7 /* FamilyControls.framework */,
+				4382A4EAFEC6653D8C073EA5 /* ManagedSettings.framework */,
+				D0BF61150C84E9F5E2EDB2CD /* DeviceActivity.framework */,
+				C26EFB90081DF41B3354D800 /* SwiftUI.framework */,
+				90C8A20A175D000CD0901282 /* DeviceActivity.framework */,
+				DF426BE757061ED2690307D4 /* SwiftUI.framework */,
+				4E206EE4E4821BE2FCB2EA22 /* DeviceActivity.framework */,
+				E456B0F4C0FC426C67186E5F /* SwiftUI.framework */,
+				D1590BDD809872593AA778F8 /* DeviceActivity.framework */,
+				9D1EC7C2D52D8723C44127D3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		65A37706B51407C34410D09E /* doomscrollReportExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DF8C168615FC10F16214AB /* Build configuration list for PBXNativeTarget "doomscrollReportExtension" */;
+			buildPhases = (
+				95B4898A4A687F8CCFFF8A00 /* Sources */,
+				581FB41BB91845821BFFA544 /* Frameworks */,
+				A75D43755A8C2A6CF90452F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doomscrollReportExtension;
+			productName = doomscrollReportExtension;
+			productReference = C1FE29102E21F5FA00678440 /* doomscrollReportExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C126077A2E198E9000429A8D /* doomscroll */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C126079C2E198E9300429A8D /* Build configuration list for PBXNativeTarget "doomscroll" */;
@@ -102,17 +313,19 @@
 				C12607772E198E9000429A8D /* Sources */,
 				C12607782E198E9000429A8D /* Frameworks */,
 				C12607792E198E9000429A8D /* Resources */,
+				C126088B2E1AC7B300429A8D /* Embed Foundation Extensions */,
+				829CC4D30C041022FBECF26B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C12608852E1AC7B300429A8D /* PBXTargetDependency */,
+				C126089A2E1AC7CE00429A8D /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C126077D2E198E9000429A8D /* doomscroll */,
 			);
 			name = doomscroll;
-			packageProductDependencies = (
-			);
 			productName = doomscroll;
 			productReference = C126077B2E198E9000429A8D /* doomscroll.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +347,6 @@
 				C126078B2E198E9300429A8D /* doomscrollTests */,
 			);
 			name = doomscrollTests;
-			packageProductDependencies = (
-			);
 			productName = doomscrollTests;
 			productReference = C12607882E198E9300429A8D /* doomscrollTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,11 +368,49 @@
 				C12607952E198E9300429A8D /* doomscrollUITests */,
 			);
 			name = doomscrollUITests;
-			packageProductDependencies = (
-			);
 			productName = doomscrollUITests;
 			productReference = C12607922E198E9300429A8D /* doomscrollUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C126087A2E1AC7B300429A8D /* doomscrollshield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12608882E1AC7B300429A8D /* Build configuration list for PBXNativeTarget "doomscrollshield" */;
+			buildPhases = (
+				C12608772E1AC7B300429A8D /* Sources */,
+				C12608782E1AC7B300429A8D /* Frameworks */,
+				C12608792E1AC7B300429A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C126087F2E1AC7B300429A8D /* doomscrollshield */,
+			);
+			name = doomscrollshield;
+			productName = doomscrollshield;
+			productReference = C126087B2E1AC7B300429A8D /* doomscrollshield.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C126088F2E1AC7CE00429A8D /* doomscrollshieldconfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C126089D2E1AC7CE00429A8D /* Build configuration list for PBXNativeTarget "doomscrollshieldconfig" */;
+			buildPhases = (
+				C126088C2E1AC7CE00429A8D /* Sources */,
+				C126088D2E1AC7CE00429A8D /* Frameworks */,
+				C126088E2E1AC7CE00429A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C12608942E1AC7CE00429A8D /* doomscrollshieldconfig */,
+			);
+			name = doomscrollshieldconfig;
+			productName = doomscrollshieldconfig;
+			productReference = C12608902E1AC7CE00429A8D /* doomscrollshieldconfig.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -184,6 +433,12 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = C126077A2E198E9000429A8D;
 					};
+					C126087A2E1AC7B300429A8D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C126088F2E1AC7CE00429A8D = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = C12607762E198E9000429A8D /* Build configuration list for PBXProject "doomscroll" */;
@@ -195,6 +450,9 @@
 			);
 			mainGroup = C12607722E198E9000429A8D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C1260BD92E1D682C00429A8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C126077C2E198E9000429A8D /* Products */;
 			projectDirPath = "";
@@ -203,11 +461,21 @@
 				C126077A2E198E9000429A8D /* doomscroll */,
 				C12607872E198E9300429A8D /* doomscrollTests */,
 				C12607912E198E9300429A8D /* doomscrollUITests */,
+				C126087A2E1AC7B300429A8D /* doomscrollshield */,
+				C126088F2E1AC7CE00429A8D /* doomscrollshieldconfig */,
+				65A37706B51407C34410D09E /* doomscrollReportExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A75D43755A8C2A6CF90452F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C12607792E198E9000429A8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,9 +497,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C12608792E1AC7B300429A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C126088E2E1AC7CE00429A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		95B4898A4A687F8CCFFF8A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E95FAB8948BA4F4FEE9873C /* doomscrollReportExtension.swift in Sources */,
+				01C0277D91F88C7FB3D236BA /* TotalActivityView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C12607772E198E9000429A8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +544,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C12608772E1AC7B300429A8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C126088C2E1AC7CE00429A8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -266,9 +571,60 @@
 			target = C126077A2E198E9000429A8D /* doomscroll */;
 			targetProxy = C12607932E198E9300429A8D /* PBXContainerItemProxy */;
 		};
+		C12608852E1AC7B300429A8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C126087A2E1AC7B300429A8D /* doomscrollshield */;
+			targetProxy = C12608842E1AC7B300429A8D /* PBXContainerItemProxy */;
+		};
+		C126089A2E1AC7CE00429A8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C126088F2E1AC7CE00429A8D /* doomscrollshieldconfig */;
+			targetProxy = C12608992E1AC7CE00429A8D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2DA6600391132B517077F0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = doomscrollReportExtension/doomscrollReportExtension.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = doomscrollReportExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollReportExtension;
+				PRODUCT_NAME = doomscrollReportExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5D3BDC25E187B5334BD0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = doomscrollReportExtension/doomscrollReportExtension.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = doomscrollReportExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollReportExtension;
+				PRODUCT_NAME = doomscrollReportExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C126079A2E198E9300429A8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = doomscroll/doomscroll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2XM6AGG7H3;
@@ -405,6 +762,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,6 +781,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = doomscroll/doomscroll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2XM6AGG7H3;
@@ -433,6 +792,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +878,110 @@
 			};
 			name = Release;
 		};
+		C12608892E1AC7B300429A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = doomscrollshield/doomscrollshield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = doomscrollshield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = doomscrollshield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollshield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C126088A2E1AC7B300429A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = doomscrollshield/doomscrollshield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = doomscrollshield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = doomscrollshield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollshield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C126089E2E1AC7CE00429A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = doomscrollshieldconfig/doomscrollshieldconfig.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = doomscrollshieldconfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = doomscrollshieldconfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollshieldconfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C126089F2E1AC7CE00429A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = doomscrollshieldconfig/doomscrollshieldconfig.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XM6AGG7H3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = doomscrollshieldconfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = doomscrollshieldconfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.doomscroll.doomscrollshieldconfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,7 +1021,45 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C12608882E1AC7B300429A8D /* Build configuration list for PBXNativeTarget "doomscrollshield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12608892E1AC7B300429A8D /* Debug */,
+				C126088A2E1AC7B300429A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C126089D2E1AC7CE00429A8D /* Build configuration list for PBXNativeTarget "doomscrollshieldconfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C126089E2E1AC7CE00429A8D /* Debug */,
+				C126089F2E1AC7CE00429A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DF8C168615FC10F16214AB /* Build configuration list for PBXNativeTarget "doomscrollReportExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D3BDC25E187B5334BD0EE /* Release */,
+				2DA6600391132B517077F0F5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1260BD92E1D682C00429A8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = C12607732E198E9000429A8D /* Project object */;
 }
