@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Promises (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>doomscroll.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -24,10 +29,15 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>doomscrollMonitorExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>doomscrollReportExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>doomscrollshield.xcscheme_^#shared#^_</key>
 		<dict>

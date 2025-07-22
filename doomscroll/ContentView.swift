@@ -1,15 +1,9 @@
-//
-//  ContentView.swift
-//  doomscroll
-//
-//  Created by Rabin on 7/5/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     @StateObject private var dataManager = DataManager.shared
     @EnvironmentObject var notificationDelegate: NotificationDelegate
+    @EnvironmentObject var screenTimeManager: ScreenTimeManager // <-- 1. ADD THIS LINE
 
     var body: some View {
         NavigationStack {
@@ -21,6 +15,10 @@ struct ContentView: View {
             }
             .background(
                 BlockingDetectionView()
+            )
+            .background(
+                // This view will now run in the background and trigger your report extension
+                HiddenActivityCollector()
             )
             .dsSheet(
                 title: "Unblock Decision",

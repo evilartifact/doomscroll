@@ -23,9 +23,7 @@ extension DeviceActivityEvent.Name {
     static let dataCollection = Self("dataCollection")
 }
 
-extension DeviceActivityReport.Context {
-    static let totalActivity = Self("totalActivity")
-}
+// DeviceActivityReport.Context removed - using MonitorExtension for data collection
 
 // MARK: - App Usage Data Models
 struct AppUsageInfo: Codable {
@@ -193,7 +191,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         print("📊 Starting DeviceActivity monitoring according to Apple docs...")
         
         // According to Apple docs: DeviceActivity monitoring must be set up with proper schedule
-        // and the data is accessed through DeviceActivityReport extensions only
+        // and the data is collected by MonitorExtension and written to shared UserDefaults
         let calendar = Calendar.current
         let now = Date()
         
@@ -208,7 +206,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
             // Only start monitoring if not already monitoring to preserve data counters
             if !isMonitoring {
                 try deviceActivityCenter.startMonitoring(.totalActivity, during: schedule)
-                print("✅ Started DeviceActivity monitoring - data will be available through DeviceActivityReport")
+                print("✅ Started DeviceActivity monitoring - data will be collected by MonitorExtension")
                 isMonitoring = true
             } else {
                 print("📊 DeviceActivity monitoring already active - preserving data counters")
@@ -220,50 +218,14 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
 
     
-    private func fetchRealScreenTimeData() async {
-        // Always try to get authorization status first
-        let currentStatus = authorizationCenter.authorizationStatus
-        self.authorizationStatus = currentStatus
+    // Data collection is now handled by MonitorExtension
+    // This method reads the aggregated data from shared UserDefaults
+    private func readDataFromMonitorExtension() async {
+        print("📊 [ScreenTimeManager] Reading data collected by MonitorExtension...")
         
-        guard currentStatus == .approved else {
-            print("❌ Authorization not approved for data collection. Status: \(currentStatus)")
-            print("📲 User needs to grant Screen Time permission in Settings or through app authorization")
-            return
-        }
-        
-        print("✅ Screen Time authorization approved - fetching real data...")
-        
-        // Create a filter for today's data
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: Date())
-        let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)!
-        
-        let filter = DeviceActivityFilter(
-            segment: .daily(during: DateInterval(start: today, end: tomorrow)),
-            users: .all,
-            devices: .init([.iPhone, .iPad])
-        )
-        
-        // Use DeviceActivityReport to get real screen time data
-        let report = DeviceActivityReport(.totalActivity, filter: filter)
-        
-        // Request the report data
-        do {
-            // The report will be processed by our TotalActivityView extension
-            // For now, we'll create a placeholder that will be updated by the extension
-            let realData = DailyScreenTimeData(
-                date: today,
-                totalScreenTime: 0, // Will be populated by the report extension
-                appUsages: [], // Will be populated by the report extension
-                score: 100 // Will be calculated based on real data
-            )
-            
-            self.currentData = realData
-            self.lastUpdated = Date()
-            print("📊 DeviceActivityReport created successfully")
-        } catch {
-            print("❌ Failed to create DeviceActivityReport: \(error)")
-        }
+        // The MonitorExtension writes data to shared UserDefaults
+        // We just need to read it here
+        await fetchTodaysScreenTimeData()
     }
     
     private func fetchTodaysScreenTimeData() async {
@@ -301,7 +263,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         }
         
         // No fallback - only show real data
-        print("❌ No real screen time data available yet - waiting for DeviceActivityReport to process data")
+        print("❌ No real screen time data available yet - waiting for MonitorExtension to collect data")
     }
     
     private func calculateScoreFromTime(_ timeInSeconds: TimeInterval) -> Int {
@@ -347,11 +309,11 @@ class ScreenTimeManager: NSObject, ObservableObject {
             print("📊 Started DeviceActivity monitoring - system will provide historical data")
             isMonitoring = true
             
-            // The key: Force the DeviceActivityReport to be rendered to trigger data processing
-            await MainActor.run {
-                // This will be handled by the dashboard's DeviceActivityReport view
-                // which will trigger the TotalActivityView to process real historical data
-                print("📊 DeviceActivityReport will process historical data when rendered")
+            // The MonitorExtension will automatically collect data when intervals trigger
+            if let filter = createDeviceActivityFilter() {
+                // Data collection is handled by MonitorExtension lifecycle methods
+                // when monitoring intervals start/end
+                print("📊 MonitorExtension will collect data when monitoring intervals trigger")
             }
             
         } catch {
@@ -449,7 +411,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         
         // Trigger immediate sync if no data
         Task {
-            await fetchRealScreenTimeData()
+            await readDataFromMonitorExtension()
         }
         
         // Return placeholder while loading
@@ -463,7 +425,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
     func refreshData() {
         Task {
-            await fetchRealScreenTimeData()
+            await readDataFromMonitorExtension()
         }
     }
         

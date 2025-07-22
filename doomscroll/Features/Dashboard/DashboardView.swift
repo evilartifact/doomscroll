@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FamilyControls
-import DeviceActivity
 
 struct DashboardView: View {
     @StateObject private var levelManager = LevelManager.shared
@@ -227,11 +226,11 @@ struct DashboardView: View {
     }
     
     
-    // MARK: - DeviceActivity Report Card
+    // MARK: - Screen Time Activity View (UI Only)
     private var deviceActivityReportCard: some View {
         VStack(spacing: 12) {
             HStack {
-                Text("Real Screen Time Report")
+                Text("Real Screen Time Data")
                     .font(.headline)
                     .foregroundColor(.white)
                 
@@ -244,37 +243,16 @@ struct DashboardView: View {
                 .foregroundColor(.blue)
             }
             
-            // DeviceActivity Report Extension Integration
+            // UI-Only ActivityView - reads data from MonitorExtension
             if screenTimeManager.authorizationStatus == .approved {
-                if let filter = screenTimeManager.createDeviceActivityFilter() {
-                    DeviceActivityReport(.totalActivity, filter: filter)
-                        .frame(height: 200)
-                        .background(Color.black.opacity(0.3))
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.white.opacity(0.2), lineWidth: 1)
-                        )
-                } else {
-                    VStack(spacing: 8) {
-                        Image(systemName: "chart.bar.doc.horizontal")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white.opacity(0.6))
-                        
-                        Text("Preparing Screen Time Report...")
-                            .font(.subheadline)
-                            .foregroundColor(.white.opacity(0.8))
-                        
-                        Text("Real data will appear here")
-                            .font(.caption)
-                            .foregroundColor(.white.opacity(0.6))
-                            .multilineTextAlignment(.center)
-                    }
+                ActivityView()
                     .frame(height: 200)
-                    .frame(maxWidth: .infinity)
                     .background(Color.black.opacity(0.3))
                     .cornerRadius(8)
-                }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                    )
             } else {
                 VStack(spacing: 8) {
                     Image(systemName: "lock.shield")

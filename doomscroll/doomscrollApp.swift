@@ -22,7 +22,7 @@ struct doomscrollApp: App {
         WindowGroup {
             ZStack {
                 ContentView()
-                HiddenActivityCollector() // Renders DeviceActivityReport to trigger data collection
+                HiddenActivityCollector() // No longer needed - MonitorExtension handles data collection
             }
             .preferredColorScheme(.dark)
                 .environmentObject(screenTimeManager)
