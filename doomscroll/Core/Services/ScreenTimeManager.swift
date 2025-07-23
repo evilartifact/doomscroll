@@ -23,7 +23,9 @@ extension DeviceActivityEvent.Name {
     static let dataCollection = Self("dataCollection")
 }
 
-// DeviceActivityReport.Context removed - using MonitorExtension for data collection
+extension DeviceActivityReport.Context {
+    static let totalActivity = Self("totalActivity")
+}
 
 // MARK: - App Usage Data Models
 struct AppUsageInfo: Codable {
@@ -81,7 +83,6 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
     override init() {
         super.init()
-        loadPersistedData()
         setupBindings()
         checkAuthorizationStatus()
         setupUserDefaultsObserver()
@@ -103,9 +104,6 @@ class ScreenTimeManager: NSObject, ObservableObject {
     // MARK: - Selection Handling
     private func handleSelectionChange(_ selection: FamilyActivitySelection) {
         print("📱 Updated app selection: \(selection.applicationTokens.count) apps, \(selection.categoryTokens.count) categories")
-        
-        // Save the selection to persistence
-        saveSelection(selection)
         
         // When categories are selected, ensure we're monitoring ALL apps in those categories
         if !selection.categoryTokens.isEmpty {
@@ -161,8 +159,6 @@ class ScreenTimeManager: NSObject, ObservableObject {
                 print("📱 Authorization status after request: \(newStatus)")
                 
                 if newStatus == .approved {
-                    self.authorizationStatus = .approved
-                    UserDefaults.standard.set(self.authorizationStatus.rawValue, forKey: "authorizationStatus")
                     print("✅ Screen Time authorization approved - starting monitoring")
                     self.startRealDeviceActivityMonitoring()
                 } else {
@@ -191,7 +187,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         print("📊 Starting DeviceActivity monitoring according to Apple docs...")
         
         // According to Apple docs: DeviceActivity monitoring must be set up with proper schedule
-        // and the data is collected by MonitorExtension and written to shared UserDefaults
+        // and the data is accessed through DeviceActivityReport extensions only
         let calendar = Calendar.current
         let now = Date()
         
@@ -206,7 +202,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
             // Only start monitoring if not already monitoring to preserve data counters
             if !isMonitoring {
                 try deviceActivityCenter.startMonitoring(.totalActivity, during: schedule)
-                print("✅ Started DeviceActivity monitoring - data will be collected by MonitorExtension")
+                print("✅ Started DeviceActivity monitoring - data will be available through DeviceActivityReport")
                 isMonitoring = true
             } else {
                 print("📊 DeviceActivity monitoring already active - preserving data counters")
@@ -218,14 +214,50 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
 
     
-    // Data collection is now handled by MonitorExtension
-    // This method reads the aggregated data from shared UserDefaults
-    private func readDataFromMonitorExtension() async {
-        print("📊 [ScreenTimeManager] Reading data collected by MonitorExtension...")
+    private func fetchRealScreenTimeData() async {
+        // Always try to get authorization status first
+        let currentStatus = authorizationCenter.authorizationStatus
+        self.authorizationStatus = currentStatus
         
-        // The MonitorExtension writes data to shared UserDefaults
-        // We just need to read it here
-        await fetchTodaysScreenTimeData()
+        guard currentStatus == .approved else {
+            print("❌ Authorization not approved for data collection. Status: \(currentStatus)")
+            print("📲 User needs to grant Screen Time permission in Settings or through app authorization")
+            return
+        }
+        
+        print("✅ Screen Time authorization approved - fetching real data...")
+        
+        // Create a filter for today's data
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)!
+        
+        let filter = DeviceActivityFilter(
+            segment: .daily(during: DateInterval(start: today, end: tomorrow)),
+            users: .all,
+            devices: .init([.iPhone, .iPad])
+        )
+        
+        // Use DeviceActivityReport to get real screen time data
+        let report = DeviceActivityReport(.totalActivity, filter: filter)
+        
+        // Request the report data
+        do {
+            // The report will be processed by our TotalActivityView extension
+            // For now, we'll create a placeholder that will be updated by the extension
+            let realData = DailyScreenTimeData(
+                date: today,
+                totalScreenTime: 0, // Will be populated by the report extension
+                appUsages: [], // Will be populated by the report extension
+                score: 100 // Will be calculated based on real data
+            )
+            
+            self.currentData = realData
+            self.lastUpdated = Date()
+            print("📊 DeviceActivityReport created successfully")
+        } catch {
+            print("❌ Failed to create DeviceActivityReport: \(error)")
+        }
     }
     
     private func fetchTodaysScreenTimeData() async {
@@ -235,7 +267,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         }
         
         // Apple's architecture: Read only sanitized aggregate data from App Group UserDefaults
-        if let sharedDefaults = UserDefaults(suiteName: "group.com.doomscroll.shared") {
+        if let sharedDefaults = UserDefaults(suiteName: "group.llc.doomscroll.shared") {
             let totalTime = sharedDefaults.double(forKey: "totalScreenTime")
             let appCount = sharedDefaults.integer(forKey: "totalAppCount")
             let lastUpdate = sharedDefaults.object(forKey: "lastScreenTimeUpdate") as? Date ?? Date.distantPast
@@ -263,7 +295,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         }
         
         // No fallback - only show real data
-        print("❌ No real screen time data available yet - waiting for MonitorExtension to collect data")
+        print("❌ No real screen time data available yet - waiting for DeviceActivityReport to process data")
     }
     
     private func calculateScoreFromTime(_ timeInSeconds: TimeInterval) -> Int {
@@ -309,11 +341,11 @@ class ScreenTimeManager: NSObject, ObservableObject {
             print("📊 Started DeviceActivity monitoring - system will provide historical data")
             isMonitoring = true
             
-            // The MonitorExtension will automatically collect data when intervals trigger
-            if let filter = createDeviceActivityFilter() {
-                // Data collection is handled by MonitorExtension lifecycle methods
-                // when monitoring intervals start/end
-                print("📊 MonitorExtension will collect data when monitoring intervals trigger")
+            // The key: Force the DeviceActivityReport to be rendered to trigger data processing
+            await MainActor.run {
+                // This will be handled by the dashboard's DeviceActivityReport view
+                // which will trigger the TotalActivityView to process real historical data
+                print("📊 DeviceActivityReport will process historical data when rendered")
             }
             
         } catch {
@@ -323,7 +355,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
     private func setupUserDefaultsObserver() {
         // Apple's architecture: Observe UserDefaults changes instead of blocked Darwin notifications
-        guard let sharedDefaults = UserDefaults(suiteName: "group.com.doomscroll.shared") else {
+        guard let sharedDefaults = UserDefaults(suiteName: "group.llc.doomscroll.shared") else {
             print("❌ Failed to access shared UserDefaults for observation")
             return
         }
@@ -411,7 +443,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
         
         // Trigger immediate sync if no data
         Task {
-            await readDataFromMonitorExtension()
+            await fetchRealScreenTimeData()
         }
         
         // Return placeholder while loading
@@ -425,7 +457,7 @@ class ScreenTimeManager: NSObject, ObservableObject {
     
     func refreshData() {
         Task {
-            await readDataFromMonitorExtension()
+            await fetchRealScreenTimeData()
         }
     }
         
@@ -562,87 +594,6 @@ class ScreenTimeManager: NSObject, ObservableObject {
                 print("❌ Failed to load blocking state: \(error)")
             }
         }
-    }
-    
-    // MARK: - Selection Persistence
-    private func saveSelection(_ selection: FamilyActivitySelection) {
-        let encoder = JSONEncoder()
-        do {
-            // Save application tokens
-            let appTokensData = try encoder.encode(Array(selection.applicationTokens))
-            UserDefaults.standard.set(appTokensData, forKey: "selectedAppTokens")
-            
-            // Save category tokens
-            let categoryTokensData = try encoder.encode(Array(selection.categoryTokens))
-            UserDefaults.standard.set(categoryTokensData, forKey: "selectedCategoryTokens")
-            
-            // Save web domain tokens
-            let webDomainTokensData = try encoder.encode(Array(selection.webDomainTokens))
-            UserDefaults.standard.set(webDomainTokensData, forKey: "selectedWebDomainTokens")
-            
-            print("💾 Saved app selection: \(selection.applicationTokens.count) apps, \(selection.categoryTokens.count) categories")
-        } catch {
-            print("❌ Failed to save selection: \(error)")
-        }
-    }
-    
-    private func loadPersistedData() {
-        // Load authorization status
-        if UserDefaults.standard.object(forKey: "authorizationStatus") != nil {
-            let statusRawValue = UserDefaults.standard.integer(forKey: "authorizationStatus")
-            if let status = AuthorizationStatus(rawValue: statusRawValue) {
-                authorizationStatus = status
-            }
-        }
-        
-        // Load saved selection
-        let decoder = JSONDecoder()
-        var appTokens: Set<ApplicationToken> = []
-        var categoryTokens: Set<ActivityCategoryToken> = []
-        var webDomainTokens: Set<WebDomainToken> = []
-        
-        // Load application tokens
-        if let appTokensData = UserDefaults.standard.data(forKey: "selectedAppTokens") {
-            do {
-                let tokens = try decoder.decode([ApplicationToken].self, from: appTokensData)
-                appTokens = Set(tokens)
-            } catch {
-                print("❌ Failed to load app tokens: \(error)")
-            }
-        }
-        
-        // Load category tokens
-        if let categoryTokensData = UserDefaults.standard.data(forKey: "selectedCategoryTokens") {
-            do {
-                let tokens = try decoder.decode([ActivityCategoryToken].self, from: categoryTokensData)
-                categoryTokens = Set(tokens)
-            } catch {
-                print("❌ Failed to load category tokens: \(error)")
-            }
-        }
-        
-        // Load web domain tokens
-        if let webDomainTokensData = UserDefaults.standard.data(forKey: "selectedWebDomainTokens") {
-            do {
-                let tokens = try decoder.decode([WebDomainToken].self, from: webDomainTokensData)
-                webDomainTokens = Set(tokens)
-            } catch {
-                print("❌ Failed to load web domain tokens: \(error)")
-            }
-        }
-        
-        // Restore the selection if we have any tokens
-        if !appTokens.isEmpty || !categoryTokens.isEmpty || !webDomainTokens.isEmpty {
-            var selection = FamilyActivitySelection()
-            selection.applicationTokens = appTokens
-            selection.categoryTokens = categoryTokens
-            selection.webDomainTokens = webDomainTokens
-            screenTimeSelection = selection
-            print("📱 Restored app selection: \(appTokens.count) apps, \(categoryTokens.count) categories")
-        }
-        
-        // Load blocking state
-        loadBlockingState()
     }
     
     deinit {

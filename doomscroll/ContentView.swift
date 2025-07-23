@@ -41,7 +41,7 @@ struct CustomTabBarView: View {
     let views: [AnyView] = [
         AnyView(DashboardView()),
         AnyView(JournalTasksView()), // Journal and task manager tab
-        AnyView(AnalyticsView()),
+        AnyView(ScreenTimeView()),
         AnyView(EducationView()),
         AnyView(SettingsView())
     ]

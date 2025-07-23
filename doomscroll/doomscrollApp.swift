@@ -22,7 +22,7 @@ struct doomscrollApp: App {
         WindowGroup {
             ZStack {
                 ContentView()
-                HiddenActivityCollector() // No longer needed - MonitorExtension handles data collection
+                HiddenActivityCollector() // Renders DeviceActivityReport to trigger data collection
             }
             .preferredColorScheme(.dark)
                 .environmentObject(screenTimeManager)
@@ -33,14 +33,13 @@ struct doomscrollApp: App {
                 .environmentObject(soundManager)
                 .environmentObject(notificationDelegate)
                 .task {
-                    // Request permissions on app launch
-                    await requestPermissions()
-                    setupNotifications()
-                }
-                .onAppear {
-                    // Set notification delegate
-                    UNUserNotificationCenter.current().delegate = notificationDelegate
-                }
+                                    // Request both notification and screen time permissions on launch
+                                    await notificationManager.requestAuthorization()
+                                    await screenTimeManager.requestAuthorization()
+                                    
+                                    // Set up your notification delegate
+                                    UNUserNotificationCenter.current().delegate = notificationDelegate
+                                }
         }
     }
     

@@ -1,10 +1,22 @@
 import SwiftUI
+import DeviceActivity
 
-// This view is no longer needed since MonitorExtension handles all data collection automatically
-// MonitorExtension collects data when DeviceActivity intervals trigger, no UI component needed
 struct HiddenActivityCollector: View {
+    // Get the manager from the environment
+    @EnvironmentObject var screenTimeManager: ScreenTimeManager
+
     var body: some View {
-        // Empty view - MonitorExtension handles all data collection
-        EmptyView()
+        // Use the manager's function to create the filter.
+        // This is the key that connects your app's selections to the report.
+        if let filter = screenTimeManager.createDeviceActivityFilter() {
+            
+            // Create the report view. The act of creating this view is what
+            // tells the system to run your report extension.
+            DeviceActivityReport(.totalActivity, filter: filter)
+            
+                // Keep the view completely hidden from the user interface.
+                .frame(width: 0, height: 0)
+                .opacity(0)
+        }
     }
 }
